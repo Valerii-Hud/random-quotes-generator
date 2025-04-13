@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #1f1f1f;
+  background-color: #3f46a4;
   color: #ffffff;
-  overflow: hidden;
 }
 
 .btn-wrapper {
@@ -16,7 +21,7 @@ body {
     border-radius: 7px;
     border: 1px solid #000;
     cursor: pointer;
-    width: 200px;
+    width: 45%;
   }
 }
 .btn:hover {
@@ -34,7 +39,6 @@ header {
   background-color: blue;
   text-align: center;
   padding: 20px;
-  border-radius: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 5px;
 }
@@ -72,12 +76,38 @@ main {
         position: absolute;
         display: block;
         content: "";
-        top: -5px;
-        left: -50px;
+        top: 3px;
+        left: -30px;
         width: 3px;
         height: 100%;
         border-radius: 5px;
         background-color: #9f9f9f;
+      }
+    }
+  }
+}
+/* Favorites Quotes section  */
+.favorites-quotes {
+  .container {
+    .favorites-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-rows: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+      .favorite-card {
+        background: rgb(0, 11, 95);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+      .author {
+        font-style: italic;
+        padding-top: 10px;
+        font-size: 16px;
       }
     }
   }
